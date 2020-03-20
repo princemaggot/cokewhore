@@ -1,0 +1,429 @@
+<!doctype html>
+<html>
+
+<head>
+
+
+  <title>the world's number one coke whore</title>
+  <link rel="shortcut icon" href="{Favicon}">
+  <link rel="alternate" type="application/rss+xml" href="{RSS}">
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/754ea321ab.js" crossorigin="anonymous"></script>
+
+  <!-- TOOLTIPS JQUERY -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+  <script src="http://static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
+  <script>
+    (function ($) {
+        $(document).ready(function () {
+          $("area[title]").style_my_tooltips({
+            tip_follows_cursor: true,
+            tip_delay_time: 30,
+            tip_fade_speed: 300,
+            attribute: "title"
+          });
+        });
+      }
+
+    )(jQuery);
+  </script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+ 
+
+  <style type="text/css">
+
+    /* ------- TOOLTIP CUSTOM ---------- */
+    /*change later*/
+
+    #s-m-t-tooltip {
+      font-family: 'Nova Mono', monospace;
+      /*tooltip font*/
+      font-size: 14px;
+      /*tooltip font size*/
+      line-height: 25px;
+      position: absolute;
+      z-index: 9999;
+      min-width: 50px;
+      max-width: 200px;
+      height: auto;
+      margin: 10px;
+      margin-bottom: 5px;
+      padding: 5px;
+      text-align: center;
+      color: #000;
+      /*tooltip text color*/
+      background-color: #f2f2f2;
+      /*tooltip background color*/
+      border: 2px solid black;
+    }
+
+    /* ---------- SCROLLBAR ------------ */
+
+    /*change later*/
+
+    ::-webkit-scrollbar {
+      width: 7px;
+      height: 7px;
+    }
+
+    ::-webkit-scrollbar-button {
+      width: 2px;
+      height: 2px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #6c6c00;
+      border: 3px none #9e3894;
+      border-radius: 2px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #d6c23f;
+    }
+
+    ::-webkit-scrollbar-thumb:active {
+      background: #9d9d00;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #484739;
+      border: 2px none #000000;
+      border-radius: 0px;
+    }
+
+    ::-webkit-scrollbar-track:hover {
+      background: #75704f;
+    }
+
+    ::-webkit-scrollbar-track:active {
+      background: #333333;
+    }
+
+    ::-webkit-scrollbar-corner {
+      background: transparent;
+    }
+
+    /* --------- COLORS -------------- */
+    :root {
+      --backgroundColor = #262733;
+      
+    }
+    
+
+
+    /* ------ BASIC CUSTOMIZATION ---- */
+
+    body {
+      background-color: var(--backgroundColor);
+      font-family: "Exo 2", monospace;
+      font-size: 12px;
+      color: #f2f2f2;
+    }
+
+    h1 {
+      font-family: "IBM Plex Sans", sans-serif;
+      font-size: 35px;
+      text-transform: uppercase;
+      color: #cf0707;
+      font-weight: bold;
+      text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+
+    #container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .far, .fas {
+      color: #ececec;
+      font-size: 40px;
+    }
+
+    .far:hover, .fas:hover {
+      color:#aaa!important
+    }
+    
+
+    /* ---- SIDEBAR ----- */
+
+    .navbar {
+      width: 100px;
+      height: 100vh;
+      position: absolute;
+      background-color: #0f0f0f;
+      left: 0;
+      top: 0;
+    }
+
+    #navigation {
+      margin-left: 25px;
+    }
+
+    #backbar .far {
+      font-size: 40px;
+      padding: 6px;
+      margin-bottom: 37px;
+      margin-top: 10px;
+    }
+
+    #audio {
+    font-size: 40px;
+    padding: 6px;
+    margin-bottom: 20px;
+    position: absolute;
+    bottom: 0;
+    }
+
+    /* -- BUTTONS -- */
+    #button_a:checked~#carousel .p-wrapper {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      animation-name: fadeInOpacity;
+      animation-iteration-count: 1;
+      animation-timing-function: ease-in;
+      animation-duration: 1s;
+    }
+
+    #button_b:checked~#carousel .p-wrapper {
+      -webkit-transform: translateY(-100%);
+      transform: translateY(-100%);
+      animation-name: fadeInOpacity2;
+      animation-iteration-count: 1;
+      animation-timing-function: ease-in;
+      animation-duration: 1s;
+    }
+
+    #button_c:checked~#carousel .p-wrapper {
+      -webkit-transform: translateY(-200%);
+      transform: translateY(-200%);
+      animation-name: fadeInOpacity3;
+      animation-iteration-count: 1;
+      animation-timing-function: ease-in;
+      animation-duration: 1s;
+    }
+
+    #button_d:checked~#carousel .p-wrapper {
+      -webkit-transform: translateY(-300%);
+      transform: translateY(-300%);
+      animation-name: fadeInOpacity4;
+      animation-iteration-count: 1;
+      animation-timing-function: ease-in;
+      animation-duration: 1s;
+    }
+
+    #button_e:checked~#carousel .p-wrapper {
+      -webkit-transform: translateY(-400%);
+      transform: translateY(-400%);
+      animation-name: fadeInOpacity5;
+      animation-iteration-count: 1;
+      animation-timing-function: ease-in;
+      animation-duration: 1s;
+    }
+
+    [class^="label_"] {
+      display: block;
+      cursor: pointer;
+      margin: 18px 0;
+      width: 50px;
+      height: 50px;
+      /*line-height: 32px; */
+      text-align: center;
+      border-radius: 4px;
+      color: #aaa;
+      /* background-color: #fff;*/
+      transition: all 0.3s ease;
+    }
+
+    #button_a:checked~#navigation .label_a,
+    #button_b:checked~#navigation .label_b,
+    #button_c:checked~#navigation .label_c,
+    #button_d:checked~#navigation .label_d, 
+    #button_e:checked~#navigation .label_e {
+      cursor: default;
+      color: #cf0707!important;
+    }
+
+    /* -- KEYFRAMES -- */
+
+    @keyframes fadeInOpacity {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeInOpacity2 {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeInOpacity3 {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeInOpacity4 {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeInOpacity5 {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    /* ---- MAIN ---- */
+
+    #carousel {
+      overflow: hidden;
+      width: 95%;
+      height: 100vh;
+      border-radius: 4px;
+      margin-left: 100px;
+    }
+
+    #carousel,
+    #navigation {
+      flex: initial;
+      display: block;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .p-wrapper {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+
+    [class^="panel_"] {
+      overflow: auto;
+      position: relative;
+      width: inherit;
+      height: inherit;
+      padding: 48px;
+    }
+
+    /* ---- SECTION 1 ---- */
+
+    #imagen {
+      background-color: rgb(67, 67, 143);
+      height: 800px;
+      width: 400px;
+      margin-left: 200px;
+    }
+
+    .charimg {
+      width: 400px;
+      height: 600px;
+    }
+
+    .charimg img {
+      height: 100%
+    }
+
+    .name {
+      margin-top: -25px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <div class="navbar">
+    <div id="navigation">
+      <div id="backbar">
+        <a href="/allcharacters" title="back to all"><i class="far fa-window-close"></i></a>
+      </div>
+      <label for="button_a" class="label_a"> <i class="far fa-folder-open"></i></label>
+      <label for="button_b" class="label_b">  <i class="far fa-id-card"></i>  </label>
+      <label for="button_c" class="label_c"> <i class="fas fa-book"></i> </label>
+      <label for="button_d" class="label_d"> <i class="far fa-images"></i> </label>
+      <label for="button_e" class="label_e"> <i class="fas fa-compact-disc"></i> </label>
+      <div id="audio">
+        <i class="fas fa-microphone-alt"></i>
+      </div>
+
+    </div> <!-- // #navigation -->
+  </div>
+
+
+
+
+  <input hidden type="radio" name="carousel-control" id="button_a" checked />
+  <input hidden type="radio" name="carousel-control" id="button_b" />
+  <input hidden type="radio" name="carousel-control" id="button_c" />
+  <input hidden type="radio" name="carousel-control" id="button_d" />
+  <input hidden type="radio" name="carousel-control" id="button_e" />
+
+  <div id="carousel">
+    <div class="p-wrapper">
+
+      <!--------- MAIN PAGE --------->
+      <section class="panel_a">
+        <div id="imagen">
+            <img class="charimg" src="https://via.placeholder.com/400x600">
+          <h1 class="name"> character name</h1>
+          <p class="text"> Brute-force IP gigabit speed encryption virus compromised timing out connect delete wipe. Gigabit speed data dump two-step verification, hack network DNS timing out intercepting traffic dat file IP backup malware. Rootkit boot up worm, IRC Tor malware intercepting traffic system protocol nodes operating system. Delete network rootkit nodes.</p>
+        </div>
+      </section>
+
+
+      <section class="panel_b">
+        <h2> Panel b </h2>
+      </section>
+      <section class="panel_c">
+        <h2> Panel c </h2>
+      </section>
+      <section class="panel_d">
+        <h2> Panel d </h2>
+      </section>
+      <section class="panel_e">
+        <h2> Panel e </h2>
+      </section>
+    </div> <!-- // .p-wrapper -->
+  </div> <!-- // #carousel -->
+
+
+
+
+
+
+
+</body>
+
+</html>
